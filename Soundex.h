@@ -1,4 +1,14 @@
-#ifndef SOUNDEX_H
+#include <gtest/gtest.h>
+#include "Soundex.h"
+
+TEST(SoudexTestsuite, ReplacesConsonantsWithAppropriateDigits) {
+ //AAA
+  char soundex[5];
+  generateSoundex("AX", soundex);
+ // ASSERT_EQ(soundex,"A200");
+}
+
+/*#ifndef SOUNDEX_H
 #define SOUNDEX_H
 
 #include "Soundex.h"
@@ -38,3 +48,4 @@ void computeSoundex(const char *input, char *output) {
 
     output[4] = '\0';
 }
+*/
